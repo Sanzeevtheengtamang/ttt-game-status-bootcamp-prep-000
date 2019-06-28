@@ -30,5 +30,6 @@ def winner?
   player = won?(board)
   if board[player.first] == "X" || board[player.first] == "O" || board[player.first] == nil
     return board[player.first]
+  end
 end
 
