@@ -14,8 +14,9 @@ def won?(board)
   end
 end
 
-def full?
-  
+def full?(board)
+  if won?(board)
+    puts "Game Finished"
 end
   
 
