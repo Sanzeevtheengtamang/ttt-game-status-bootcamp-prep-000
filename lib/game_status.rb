@@ -15,11 +15,7 @@ def won?(board)
 end
 
 def full?(board)
-  if won?(board)
-    puts "Game Finished"
-  elsif !won?(board) && position_taken?
-    puts "game Draw"
-  end
+  board.all? 
 end
   
 
