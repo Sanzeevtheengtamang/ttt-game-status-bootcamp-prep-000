@@ -26,7 +26,7 @@ def over?(board)
   draw?(board) || full?(board) || won?(board)
 end
 
-def winner?
+def winner?(board)
   player = won?(board)
   if board[player.first] == "X" || board[player.first] == "O" || board[player.first] == nil
     return board[player.first]
