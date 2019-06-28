@@ -12,6 +12,8 @@ def won?(board)
     board[sub_array[1]] == board[sub_array[2]] && 
     position_taken?(board,sub_array[0])
   end
-  
 end
+
+def full?
+  
 
