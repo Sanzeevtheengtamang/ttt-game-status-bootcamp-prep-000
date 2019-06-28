@@ -28,9 +28,9 @@ end
 
 def winner?
   player = won?(board)
-  if player[board[0]] == "X"
+  if board[player.first] == "X"
     puts "X won"
-  elsif player[board[0]] == "Y"
+  elsif board[player.first] == "Y"
     puts "Y won"
   end
 end
