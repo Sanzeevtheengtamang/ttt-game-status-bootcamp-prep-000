@@ -27,8 +27,7 @@ def over?(board)
 end
 
 def winner(board)
-  player = won?(board)
-  if board[player.first] == "X" || board[player.first] == "O" || board[player.first] == false
+  if player = won?(board)
     return board[player.first]
   end
 end
