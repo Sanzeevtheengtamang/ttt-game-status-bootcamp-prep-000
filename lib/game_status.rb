@@ -27,6 +27,11 @@ def over?(board)
 end
 
 def winner?
-  if won?(board) && 
+  if won?(board) && won?(board).include?("X")
+    return puts "X won"
+  elsif won?(board) && won?(board).include?("Y")
+    return puts "Y won"
+  end
+    
 end
 
