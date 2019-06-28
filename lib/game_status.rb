@@ -28,10 +28,8 @@ end
 
 def winner(board)
   player = won?(board)
-  if board[player.first] == "X" || board[player.first] == "O"
+  if board[player.first] == "X" || board[player.first] == "O" || board[player.first] == false
     return board[player.first]
-  elsif draw?(board)
-  return nil
   end
 end
 
