@@ -15,7 +15,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? 
+  board.all?{ |element| element == "X" || element == "O"}
 end
   
 
